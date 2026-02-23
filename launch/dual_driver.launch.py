@@ -68,7 +68,7 @@ def write_azimuth_override(ns, az_start, az_end):
 
 
 def launch_setup(context):
-    pkg_dir = get_package_share_directory('ouster_ros')
+    pkg_dir = get_package_share_directory('ouster_multi')
     config = Path(pkg_dir) / 'config'
 
     front_params = str(config / 'driver_params_front.yaml')
