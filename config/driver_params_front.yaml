@@ -1,22 +1,22 @@
 ouster_front/os_driver:
   ros__parameters:
     sensor_hostname: '192.168.0.93'
-    udp_dest: ''
+    udp_dest: '192.168.0.21'
     mtp_dest: ''
     mtp_main: false
     lidar_mode: ''
-    timestamp_mode: ''
+    timestamp_mode: 'TIME_FROM_INTERNAL_OSC'
     ptp_utc_tai_offset: -37.0
     udp_profile_lidar: ''
     metadata: ''
-    lidar_port: 0
-    imu_port: 0
+    lidar_port: 7502
+    imu_port: 7503
     sensor_frame: os_sensor_front
     lidar_frame: os_lidar_front
     imu_frame: os_imu_front
     point_cloud_frame: os_lidar_front
     pub_static_tf: true
-    proc_mask: IMU|PCL|SCAN|IMG|RAW|TLM
+    proc_mask: IMG|PCL|IMU|SCAN
     scan_ring: 0
     use_system_default_qos: false
     point_type: original
